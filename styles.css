@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #6e6cff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  height: 20px;
+}
+
+.game-container {
+  background-color: #fffea5;
+  border-radius: 10px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container div:last-child {
+  height: 20px;
+}
+
+.game-container div:last-child button {
+  height: 50px;
+  width: 170px;
+  padding: 5px;
+  border: none;
+  background-color: #f9acfc;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+.game-container div:last-child button:hover {
+  background-color: #6e6cff;
+}
+
+.tiles-container {
+  border-radius: 5px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  font-size: 8rem;
+}
+
+.tiles-container > p {
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #f9acfc;
+  height: 230px;
+  width: 280px;
+  cursor: pointer;
+}
+
+.tiles-container > p:hover {
+  background-color: #6e6cff;
+}
+
+.player-names-input {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.player-names-input input {
+  height: 50px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px;
+  border: solid #f9acfc;
+  font-size: 1.3rem;
+}
